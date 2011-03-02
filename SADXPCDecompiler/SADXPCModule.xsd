@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType id="address" name="address">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9A-Fa-f]{1,8}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType id="identifier" name="identifier">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z_a-z][0-9A-Z_a-z]+" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SADXPCModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Group" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="StandAloneMaterial">
+                <xs:complexType>
+                  <xs:attribute name="Address" type="address" use="required" />
+                  <xs:attribute name="Count" type="xs:int" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" name="Export">
+                <xs:complexType>
+                  <xs:choice>
+                    <xs:element name="Objects">
+                      <xs:complexType>
+                        <xs:attribute name="Count" type="xs:int" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Models">
+                      <xs:complexType>
+                        <xs:attribute name="Count" type="xs:int" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Actions">
+                      <xs:complexType>
+                        <xs:attribute name="Count" type="xs:int" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Motions">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Motion">
+                            <xs:complexType>
+                              <xs:choice>
+                                <xs:element maxOccurs="unbounded" name="VertexCount" type="xs:int" />
+                                <xs:element name="Reused" />
+                              </xs:choice>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Materials">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Material">
+                            <xs:complexType>
+                              <xs:attribute name="Count" type="xs:int" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Points">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Vector3Count" type="xs:int" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Name" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Attach" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="Address" type="address" use="required" />
+            <xs:attribute name="OverrideMaterialCount" type="xs:int" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rename" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="Address" type="address" use="required" />
+            <xs:attribute name="NewName" type="identifier" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

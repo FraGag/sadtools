@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SADXPCModule>
+  <Group Name="Amy">
+    <Export Name="___AMY_OBJECTS">
+      <Objects Count="39" />
+    </Export>
+    <Export Name="___AMY_MODELS">
+      <Models Count="5" />
+    </Export>
+    <Export Name="___AMY_ACTIONS">
+      <Actions Count="80" />
+    </Export>
+    <Export Name="___AMY_MOTIONS">
+      <Motions>
+        <Motion>
+          <VertexCount>465</VertexCount>
+          <VertexCount>0</VertexCount>
+          <VertexCount>0</VertexCount>
+          <VertexCount>20</VertexCount>
+          <VertexCount>20</VertexCount>
+        </Motion>
+      </Motions>
+    </Export>
+  </Group>
+  <Group Name="Big">
+    <Export Name="___BIG_OBJECTS">
+      <Objects Count="44" />
+    </Export>
+    <Export Name="___BIG_MODELS">
+      <Models Count="4" />
+    </Export>
+    <Export Name="___BIG_ACTIONS">
+      <Actions Count="90" />
+    </Export>
+    <Export Name="___BIG_MOTIONS">
+      <Motions>
+        <Motion>
+          <VertexCount>294</VertexCount>
+          <VertexCount>10</VertexCount>
+          <VertexCount>0</VertexCount>
+          <VertexCount>0</VertexCount>
+          <VertexCount>10</VertexCount>
+          <VertexCount>0</VertexCount>
+          <VertexCount>0</VertexCount>
+        </Motion>
+      </Motions>
+    </Export>
+    <Export Name="___BIG_POINTS">
+      <Points>
+        <Vector3Count>78</Vector3Count>
+        <Vector3Count>6</Vector3Count>
+        <Vector3Count>78</Vector3Count>
+        <Vector3Count>6</Vector3Count>
+        <Vector3Count>78</Vector3Count>
+        <Vector3Count>6</Vector3Count>
+      </Points>
+    </Export>
+  </Group>
+  <Group Name="E-102">
+    <Export Name="___E102_OBJECTS">
+      <Objects Count="28" />
+    </Export>
+    <Export Name="___E102_ACTIONS">
+      <Actions Count="78" />
+    </Export>
+    <Export Name="___E102_MOTIONS">
+      <Motions>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+      </Motions>
+    </Export>
+    <Export Name="___E102_MATERIALS">
+      <Materials>
+        <Material Count="1" />
+        <Material Count="9" />
+        <Material Count="4" />
+        <Material Count="3" />
+        <Material Count="3" />
+        <Material Count="3" />
+      </Materials>
+    </Export>
+  </Group>
+  <Group Name="Knuckles">
+    <Export Name="___KNUCKLES_OBJECTS">
+      <Objects Count="74" />
+    </Export>
+    <Export Name="___KNUCKLES_MODELS">
+      <Models Count="23" />
+    </Export>
+    <Export Name="___KNUCKLES_ACTIONS">
+      <Actions Count="90" />
+    </Export>
+    <Export Name="___KNUCKLES_MOTIONS">
+      <Motions>
+        <Motion>
+          <VertexCount>432</VertexCount>
+          <VertexCount>207</VertexCount>
+        </Motion>
+      </Motions>
+    </Export>
+  </Group>
+  <Group Name="Miles">
+    <Export Name="___MILES_OBJECTS">
+      <Objects Count="72" />
+    </Export>
+    <Export Name="___MILES_MODELS">
+      <Models Count="15" />
+    </Export>
+    <Export Name="___MILES_ACTIONS">
+      <Actions Count="114" />
+    </Export>
+    <Export Name="___MILES_MOTIONS">
+      <Motions>
+        <Motion>
+          <VertexCount>546</VertexCount>
+        </Motion>
+      </Motions>
+    </Export>
+  </Group>
+  <Group Name="Sonic">
+    <StandAloneMaterial Address="106804E8" Count="1" />
+    <Export Name="___SONIC_OBJECTS">
+      <Objects Count="79" />
+    </Export>
+    <Export Name="___SONIC_MODELS">
+      <Models Count="10" />
+    </Export>
+    <Export Name="___SONIC_ACTIONS">
+      <Actions Count="149" />
+    </Export>
+    <Export Name="___SONIC_MOTIONS">
+      <Motions>
+        <Motion>
+          <VertexCount>376</VertexCount>
+          <VertexCount>193</VertexCount>
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+        <Motion>
+          <Reused />
+        </Motion>
+      </Motions>
+    </Export>
+  </Group>
+  <Attach Address="1068361C" OverrideMaterialCount="0" />
+  <Rename Address="10009C28" NewName="ATTACH_Amy_Body" />
+  <Rename Address="10009C54" NewName="OBJECT_Amy_Body" />
+  <Rename Address="10009E8C" NewName="ATTACH_Amy_Tail" />
+  <Rename Address="10009EB8" NewName="OBJECT_Amy_Tail" />
+  <Rename Address="100159A0" NewName="ATTACH_Amy_Head" />
+  <Rename Address="100159CC" NewName="OBJECT_Amy_Head" />
+  <Rename Address="102D665C" NewName="OBJECT_Knuckles_Body" />
+  <Rename Address="102E23B0" NewName="OBJECT_Knuckles_Model" />
+  <Rename Address="102EEE50" NewName="OBJECT_Knuckles_Air_Model" />
+  <Rename Address="102F0E24" NewName="OBJECT_Knuckles_JBall" />
+  <Rename Address="102F8530" NewName="OBJECT_Knuckles_Roll_Model" />
+  <Rename Address="1041FE04" NewName="OBJECT_Tails_Body" />
+  <Rename Address="1042AD54" NewName="OBJECT_Tails_Model" />
+  <Rename Address="1042CCF4" NewName="OBJECT_Tails_Body2" />
+  <Rename Address="10437C44" NewName="OBJECT_Tails_Fly_Model" />
+  <Rename Address="1043F4B4" NewName="OBJECT_Tails_Roll_Model" />
+  <Rename Address="1044148C" NewName="OBJECT_Tails_JBall" />
+  <Rename Address="1055E740" NewName="ATTACH_Sonic_Tail" />
+  <Rename Address="1055E76C" NewName="OBJECT_Sonic_Tail" />
+  <Rename Address="1055F304" NewName="ATTACH_Sonic_Left_Shoe_Toe" />
+  <Rename Address="1055F330" NewName="OBJECT_Sonic_Left_Shoe_Toe" />
+  <Rename Address="1055F91C" NewName="ATTACH_Sonic_Left_Shoe_Heel" />
+  <Rename Address="1055F948" NewName="OBJECT_Sonic_Left_Shoe_Heel" />
+  <Rename Address="10560DA4" NewName="ATTACH_Sonic_Right_Shoe_Toe" />
+  <Rename Address="10560DD0" NewName="OBJECT_Sonic_Right_Shoe_Toe" />
+  <Rename Address="105613CC" NewName="ATTACH_Sonic_Right_Shoe_Heel" />
+  <Rename Address="105613F8" NewName="OBJECT_Sonic_Right_Shoe_Heel" />
+  <Rename Address="10565C68" NewName="MATERIAL_SONIC_HEAD" />
+  <Rename Address="10565CA8" NewName="POLY1_SONIC_HEAD" />
+  <Rename Address="10565D10" NewName="POLY2_SONIC_HEAD" />
+  <Rename Address="10565E68" NewName="POLY3_SONIC_HEAD" />
+  <Rename Address="10567320" NewName="MESH_SONIC_HEAD" />
+  <Rename Address="10567378" NewName="VERTEX_SONIC_HEAD" />
+  <Rename Address="10568470" NewName="NORMAL_SONIC_HEAD" />
+  <Rename Address="10569568" NewName="ATTACH_SONIC_HEAD" />
+  <Rename Address="10569594" NewName="OBJECT_Sonic_Head" />
+  <Rename Address="1056AD1C" NewName="ATTACH_Sonic_Body" />
+  <Rename Address="1056AD48" NewName="OBJECT_Sonic_Body" />
+  <Rename Address="1056AF50" NewName="OBJECT_Sonic_Model" />
+  <Rename Address="105729CC" NewName="OBJECT_Sonic_Jump" />
+  <Rename Address="1057BC44" NewName="OBJECT_Sonic_JBall" />
+  <Rename Address="105818AC" NewName="OBJECT_Sonic_Left_Light_Shoe_Toe" />
+  <Rename Address="10581FB8" NewName="OBJECT_Sonic_Left_Light_Shoe_Heel" />
+  <Rename Address="105825A4" NewName="OBJECT_Sonic_Right_Light_Shoe_Toe" />
+  <Rename Address="10582CC0" NewName="OBJECT_Sonic_Right_Light_Shoe_Heel" />
+  <Rename Address="10583284" NewName="OBJECT_Sonic_CRing" />
+  <Rename Address="10583904" NewName="OBJECT_Sonic_CRing_Item" />
+  <Rename Address="1058F808" NewName="OBJECT_Metal_Head" />
+  <Rename Address="10591068" NewName="OBJECT_Metal_Model" />
+  <Rename Address="1059C234" NewName="OBJECT_Metal_Jump" />
+  <Rename Address="1059E254" NewName="OBJECT_Metal_JBall" />
+  <Rename Address="1059F424" NewName="Action_Metal_Hover" />
+  <Rename Address="105C310C" NewName="ACTION_SONIC_STAND" />
+  <Rename Address="105D9674" NewName="ACTION_SONIC_SPIN" />
+  <Rename Address="10610AF4" NewName="ACTION_Sonic_Surf_Stance" />
+  <Rename Address="10622228" NewName="ATTACH_Sonic_LightToe" />
+  <Rename Address="1062C4CC" NewName="OBJECT_Super_Head" />
+  <Rename Address="1062DE88" NewName="OBJECT_Super_Model" />
+  <Rename Address="1062FE6C" NewName="OBJECT_Super_JBall" />
+  <Rename Address="10638ECC" NewName="ACTION_SUPER_STAND" />
+  <Rename Address="10683648" NewName="OBJECT_Sonic_LSBody" />
+  <Rename Address="106837E8" NewName="OBJECT_Sonic_LS_Model" />
+  <Rename Address="107276E4" NewName="OBJECT_Sonic_Board" />
+</SADXPCModule>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8088460-9A72-4142-988F-BE5555BA4353}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SonicRetro.SonicAdventure.Data</RootNamespace>
+    <AssemblyName>SonicRetro.SonicAdventure.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\SonicRetro.SonicAdventure.Data.XML</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\SonicRetro.SonicAdventure.Data.XML</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AnimFrame.cs" />
+    <Compile Include="AnimFrame_PosRot.cs" />
+    <Compile Include="AnimFrame_PosRotScale.cs" />
+    <Compile Include="AnimFrame_VertNrm.cs" />
+    <Compile Include="AnimHead.cs" />
+    <Compile Include="AnimHead2.cs" />
+    <Compile Include="ATTACH.cs" />
+    <Compile Include="FowlerNollVoHash.cs" />
+    <Compile Include="IAnimFrameVisitor.cs" />
+    <Compile Include="INamed.cs" />
+    <Compile Include="IPolyVisitor.cs" />
+    <Compile Include="MATERIAL.cs" />
+    <Compile Include="MESH.cs" />
+    <Compile Include="NamedCollection.cs" />
+    <Compile Include="OBJECT.cs" />
+    <Compile Include="Poly.cs" />
+    <Compile Include="PolyNormal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quad.cs" />
+    <Compile Include="Rotation3.cs" />
+    <Compile Include="Rotation3AnimData.cs" />
+    <Compile Include="Strip.cs" />
+    <Compile Include="Triangle.cs" />
+    <Compile Include="UV.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Vector3AnimData.cs" />
+    <Compile Include="Vector3ArrayAnimData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Condition="Exists('$(ProgramFiles)\MSBuild\Microsoft\StyleCop\v4.4\Microsoft.StyleCop.targets')" Project="$(ProgramFiles)\MSBuild\Microsoft\StyleCop\v4.4\Microsoft.StyleCop.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
